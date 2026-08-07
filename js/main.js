@@ -136,10 +136,11 @@
         _template: 'table',
         _captcha: 'false',
         _honey: '',
+        _replyto: f.get('email'),
         Name: f.get('name'),
         Company: f.get('company') || '—',
         Country: f.get('country') || '—',
-        Email: f.get('email'),
+        email: f.get('email'),
         'Phone / WhatsApp': f.get('phone') || '—',
         Product: f.get('product'),
         'Estimated Quantity': f.get('quantity') || '—',
@@ -151,11 +152,14 @@
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(data)
       }).then(function (r) {
-        if (!r.ok) throw new Error('send failed');
-        var note = document.getElementById('formNote');
-        if (note) note.classList.add('show');
-        form.reset();
-        if (btn) { btn.disabled = false; btn.textContent = btnTxt; }
+        return r.json().then(function (d) {
+          // FormSubmit answers HTTP 200 even when it spam-flags a message — check the real answer:
+          if (!r.ok || String(d.success) !== 'true') throw new Error((d && d.message) || 'send failed');
+          var note = document.getElementById('formNote');
+          if (note) note.classList.add('show');
+          form.reset();
+          if (btn) { btn.disabled = false; btn.textContent = btnTxt; }
+        });
       }).catch(function () {
         var err = document.getElementById('formError');
         if (err) err.classList.add('show');
