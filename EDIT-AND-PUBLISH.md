@@ -183,14 +183,23 @@ Pages hosting → total website cost ≈ $10 per YEAR. That's it.**
 
 ---
 
-## 📬 Contact form WITHOUT opening an email app (optional upgrade)
+## 📬 Contact form — how inquiries reach you (already set up ✅)
 
-Free service: **formspree.io**
-1. Sign up → New form → copy your form ID
-2. In `contact.html` change the form tag to:
-   `<form class="q-form reveal" id="quoteForm" action="https://formspree.io/f/YOUR_ID" method="POST">`
-3. Delete the submit handler block in `js/main.js` (the `form.addEventListener('submit'…)` part)
-Free tier = 50 submissions/month straight to your inbox.
+The form sends **directly from the website** via the free service **FormSubmit** —
+no email app needed on the visitor's side. Every inquiry lands in
+**export.ramjitraders@gmail.com** as a normal email (unlimited, free, with a
+honeypot anti-spam field).
+
+**One-time activation (IMPORTANT):** the very first submission makes FormSubmit
+email an "Activate" link to export.ramjitraders@gmail.com — click it **once**
+and all future inquiries are delivered. Until then nothing is delivered.
+
+If you ever change the receiving email address:
+1. In `js/main.js`, replace `https://formsubmit.co/ajax/export.ramjitraders@gmail.com`
+   with `https://formsubmit.co/ajax/YOUR-NEW-EMAIL`
+2. Change the visible addresses too (`index.html`, `contact.html`, `js/i18n.js` —
+   Find in Files: `export.ramjitraders`)
+3. Do one test submission from the site → click the new activation email.
 
 ---
 

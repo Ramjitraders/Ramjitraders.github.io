@@ -235,6 +235,9 @@ h1{font-size:clamp(2.7rem,6.6vw,5.5rem);margin-top:26px}
 .f-note a,.f-success a{color:var(--gold);border-bottom:1px solid rgba(212,169,78,.4)}
 .f-success{display:none;margin-top:16px;padding:16px 18px;border:1px solid rgba(111,190,130,.4);background:rgba(111,190,130,.08);border-radius:12px;font-size:14px;color:#bfe3c9;text-align:center}
 .f-success.show{display:block}
+.f-error{display:none;margin-top:16px;padding:16px 18px;border:1px solid rgba(220,120,110,.45);background:rgba(220,120,110,.09);border-radius:12px;font-size:14px;color:#eec4bd;text-align:center}
+.f-error a{color:var(--gold);border-bottom:1px solid rgba(212,169,78,.4)}
+.f-error.show{display:block}
 .c-card{background:var(--panel);border:1px solid rgba(212,169,78,.12);border-radius:22px;padding:34px;margin-bottom:24px}
 .c-card h4{font-size:23px;margin-bottom:20px}
 .c-row{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:14px;flex-wrap:wrap}

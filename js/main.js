@@ -106,7 +106,7 @@
     })();
   }
 
-  /* ── Contact form → pre-filled email ── */
+  /* ── Contact form → direct send via FormSubmit (lands in export.ramjitraders@gmail.com) ── */
   var form = document.getElementById('quoteForm');
   if (form) {
     // pre-select product from ?product=bitumen|epdm|both
@@ -125,23 +125,42 @@
         else if (el) { el.classList.remove('err'); }
       });
       if (!ok) return;
+
+      var btn = form.querySelector('button[type="submit"]');
+      var btnTxt = btn ? btn.textContent : '';
+      if (btn) { btn.disabled = true; btn.textContent = '···'; }
+
       var f = new FormData(form);
-      var subject = 'Quote Request — ' + f.get('product') + ' — ' + (f.get('company') || f.get('name'));
-      var body = [
-        'Name: ' + f.get('name'),
-        'Company: ' + (f.get('company') || '—'),
-        'Country: ' + (f.get('country') || '—'),
-        'Email: ' + f.get('email'),
-        'Phone / WhatsApp: ' + (f.get('phone') || '—'),
-        'Product: ' + f.get('product'),
-        'Estimated Quantity: ' + (f.get('quantity') || '—'),
-        '',
-        'Message:',
-        f.get('message')
-      ].join('\n');
-      window.location.href = 'mailto:export.ramjitraders@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-      var note = document.getElementById('formNote');
-      if (note) note.classList.add('show');
+      var data = {
+        _subject: 'Quote Request — ' + f.get('product') + ' — ' + (f.get('company') || f.get('name')),
+        _template: 'table',
+        _captcha: 'false',
+        _honey: '',
+        Name: f.get('name'),
+        Company: f.get('company') || '—',
+        Country: f.get('country') || '—',
+        Email: f.get('email'),
+        'Phone / WhatsApp': f.get('phone') || '—',
+        Product: f.get('product'),
+        'Estimated Quantity': f.get('quantity') || '—',
+        Message: f.get('message')
+      };
+
+      fetch('https://formsubmit.co/ajax/export.ramjitraders@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      }).then(function (r) {
+        if (!r.ok) throw new Error('send failed');
+        var note = document.getElementById('formNote');
+        if (note) note.classList.add('show');
+        form.reset();
+        if (btn) { btn.disabled = false; btn.textContent = btnTxt; }
+      }).catch(function () {
+        var err = document.getElementById('formError');
+        if (err) err.classList.add('show');
+        if (btn) { btn.disabled = false; btn.textContent = btnTxt; }
+      });
     });
   }
 })();
