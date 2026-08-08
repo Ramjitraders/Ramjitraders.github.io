@@ -106,10 +106,12 @@ matching `<img src="…">` line in `index.html`.)
 
 ### 📞 Changing PHONE or EMAIL
 
-Current values:
-- Email: `export.ramjitraders@gmail.com` — appears in index.html, contact.html,
-  and inside `js/main.js` (one `mailto:` line). Use Find in Files for
-  `export.ramjitraders` and replace everywhere.
+Current values (note: TWO different addresses exist, on purpose):
+- **Visible/public email:** `export@ramjitraders.com` — shown on the site
+  (index.html, contact.html, js/i18n.js). It *forwards* to Gmail.
+- **Backend inbox:** `export.ramjitraders@gmail.com` — appears ONLY in
+  `js/main.js` (the FormSubmit endpoint) and receives everything.
+  ⚠️ Never change the one in js/main.js unless you re-do FormSubmit activation.
 - India: `+91 98217 16462`, Germany: `+49 176 37094937` — in index.html and
   contact.html. Remember there are **two forms** of each number:
   the readable one (`+91 98217 16462`) and the link one (`href="tel:+919821716462"`
