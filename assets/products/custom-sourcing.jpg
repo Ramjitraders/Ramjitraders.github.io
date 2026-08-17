@@ -1,0 +1,379 @@
+<!doctype html>
+<!--
+  ============================================================
+  RAM JI TRADERS — Website (index.html)
+  Global Sourcing Partner & Merchant Exporter · India → Europe
+  ============================================================
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ram ji Traders — Global Sourcing Partner & Exporter | India → Europe</title>
+<meta name="description" content="Ram ji Traders is a direct global sourcing partner exporting certified industrial products, sealing washers (M5–M20), and custom metal parts from India to Europe with 25–40% cost savings.">
+<meta name="keywords" content="global sourcing partner, India export Europe, bitumen washers, EPDM washers, industrial components India, sealing washers, custom metal sourcing, Ram ji Traders">
+<link rel="canonical" href="https://ramjitraders.com/">
+<!-- Social preview (LinkedIn / WhatsApp / X) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ram ji Traders">
+<meta property="og:title" content="Ram ji Traders — Global Sourcing Partner · India → Europe">
+<meta property="og:description" content="Direct industrial sourcing from certified Indian manufacturers to Europe. 25–40% cost savings · ISO, DIN compliance · Fast dispatch & CIF European ports.">
+<meta property="og:url" content="https://ramjitraders.com/">
+<meta property="og:image" content="https://ramjitraders.com/assets/og-cover.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ram ji Traders — Global Sourcing Partner · India → Europe">
+<meta name="twitter:description" content="Direct industrial sourcing from certified Indian manufacturers to Europe with 25–40% cost advantage.">
+<meta name="twitter:image" content="https://ramjitraders.com/assets/og-cover.jpg">
+<link rel="icon" type="image/png" href="assets/logo-tile.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=8">
+</head>
+<body>
+
+<!-- ══════════ NAV ══════════ -->
+<header class="site-nav" id="siteNav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <span class="logo-mark">
+        <img src="assets/logo.png?v=8" alt="Ram ji Traders">
+      </span>
+      <span class="brand-word">RAM JI <em>TRADERS</em></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#journey" data-i18n="nav.journey">The Journey</a>
+      <a href="#products" data-i18n="nav.products">Products & Sourcing</a>
+      <a href="#why" data-i18n="nav.why">Why Us</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+    </nav>
+    <div class="lang-switch nav-lang" role="group" aria-label="Language / Sprache">
+      <button type="button" class="lang-btn on" data-lang="en">EN</button><i>/</i><button type="button" class="lang-btn" data-lang="de">DE</button>
+    </div>
+    <a class="btn btn-gold btn-sm nav-cta" href="contact.html" data-i18n="nav.quote">Request Sourcing / Quote</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#journey" data-i18n="nav.journey">The Journey</a>
+  <a href="#products" data-i18n="nav.products">Products & Sourcing</a>
+  <a href="#why" data-i18n="nav.why">Why Us</a>
+  <a href="#about" data-i18n="nav.about">About</a>
+  <a class="m-cta" href="contact.html" data-i18n="nav.quote">Request Sourcing / Quote</a>
+  <div class="lang-switch" role="group" aria-label="Language / Sprache">
+    <button type="button" class="lang-btn on" data-lang="en">EN</button><i>/</i><button type="button" class="lang-btn" data-lang="de">DE</button>
+  </div>
+</div>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="top">
+  <canvas id="heroParticles" aria-hidden="true"></canvas>
+  <div class="container hero-inner">
+    <p class="kicker reveal" data-i18n="hero.kicker">Ram ji Traders — Global Sourcing Partner · India → Europe</p>
+    <h1 class="reveal" data-delay="0.1" data-i18n-html="hero.title">What Products Are Costing You<br><em class="gold-i">Too Much in Europe?</em></h1>
+    <p class="hero-sub reveal" data-delay="0.2" data-i18n="hero.sub">We bridge your supply gaps with direct manufacturer exports from India. From specialized sealing washers (M5–M20) to custom metal stampings and on-demand components — tell us what products you need, and we source them 25–40% cheaper with strict ISO/DIN compliance.</p>
+    <div class="cta-row reveal" data-delay="0.3">
+      <a class="btn btn-gold" href="contact.html" data-i18n="nav.quote">Tell Us What You Need</a>
+      <a class="btn btn-ghost btn-pdf" href="Ramji-Traders-Product-Brochure.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 0-2 2H5a2 2 0 0 0-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span data-i18n="btn.brochure">Download Catalogue (PDF)</span>
+      </a>
+      <a class="btn btn-ghost" href="#products" data-i18n="hero.cta2">Explore Capabilities ↓</a>
+    </div>
+    <div class="hero-chips reveal" data-delay="0.4">
+      <span data-i18n="chip.bitumen">Bitumen Sealing Washers</span>
+      <span data-i18n="chip.epdm">EPDM Composite Washers</span>
+      <span data-i18n="chip.stampings">Custom Metal &amp; Hardware</span>
+      <span data-i18n="chip.custom">On-Demand Sourcing</span>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><span data-i18n="ui.scroll">SCROLL</span><i></i></div>
+</section>
+
+<!-- ══════════ TICKER ══════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span data-i18n="tick.1">Global Sourcing Partner</span>
+    <span data-i18n="tick.2">Bitumen &amp; EPDM Washers</span>
+    <span data-i18n="tick.3">Custom Metal Stampings</span>
+    <span data-i18n="tick.4">25–40% Margin Advantage</span>
+    <span data-i18n="tick.5">ISO &amp; BIS-Certified Factories</span>
+    <span data-i18n="tick.6">On-Demand Custom Procurement</span>
+    <span data-i18n="tick.7">Direct Ocean Freight to Europe</span>
+    <span data-i18n="tick.1">Global Sourcing Partner</span>
+    <span data-i18n="tick.2">Bitumen &amp; EPDM Washers</span>
+    <span data-i18n="tick.3">Custom Metal Stampings</span>
+    <span data-i18n="tick.4">25–40% Margin Advantage</span>
+    <span data-i18n="tick.5">ISO &amp; BIS-Certified Factories</span>
+    <span data-i18n="tick.6">On-Demand Custom Procurement</span>
+    <span data-i18n="tick.7">Direct Ocean Freight to Europe</span>
+  </div>
+</div>
+
+<!-- ══════════ THE JOURNEY (SCROLL ANIMATION) ══════════ -->
+<section class="journey" id="journey">
+  <div class="container journey-head">
+    <p class="kicker reveal" data-i18n="j.kicker">01 — The Journey</p>
+    <h2 class="reveal" data-delay="0.1" data-i18n-html="j.title">From Certified Indian Mills<br>to a <em class="gold-i">European Harbour.</em></h2>
+    <p class="journey-note reveal" data-delay="0.2" data-i18n="j.note">Scroll down — your scroll drives the truck, the crane and the ship.</p>
+  </div>
+
+  <div class="journey-track" id="journeyTrack">
+    <div class="journey-sticky">
+      <canvas id="journeyCanvas">Your browser does not support canvas.</canvas>
+      <div class="journey-progress"><span id="journeyBar"></span></div>
+      <aside class="j-badge left" id="jBadgeL"><span class="jb-ico" id="jIcoL"></span><span class="jb-t" id="jTextL"></span></aside>
+      <aside class="j-badge right" id="jBadgeR"><span class="jb-ico" id="jIcoR"></span><span class="jb-t" id="jTextR"></span></aside>
+    </div>
+  </div>
+
+  <div class="container journey-foot">
+    <div class="j-foot-box reveal">
+      <p class="kicker" data-i18n="jf.kicker">All From One Hand</p>
+      <h3 data-i18n-html="jf.title">Manufactured in India.<br><em class="gold-i">Delivered across Europe.</em></h3>
+      <p data-i18n="jf.sub">One accountable export partner — from India’s heavy production lines directly to your warehouse door.</p>
+      <div class="j-foot-actions">
+        <a class="btn btn-gold" href="contact.html" data-i18n="jf.btn1">Request Custom Sourcing</a>
+        <a class="btn btn-ghost" href="#products" data-i18n="jf.btn2">Explore Product Lines ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PRODUCTS & SOURCING ══════════ -->
+<section class="section products-section" id="products">
+  <div class="container">
+    <div class="section-head text-center">
+      <p class="kicker reveal" data-i18n="p.kicker">02 — Sourcing Capabilities</p>
+      <h2 class="reveal" data-delay="0.1" data-i18n-html="p.title">Core Specializations &amp;<br><em class="gold-i">Custom Sourcing.</em></h2>
+      <p class="section-sub reveal" data-delay="0.2" data-i18n="p.sub">Specialized product lines ready for immediate dispatch + custom procurement from certified Indian factories.</p>
+    </div>
+
+    <!-- PRODUCT CARD 1 — BITUMEN -->
+    <article class="product-card reveal" id="bitumen">
+      <div class="product-grid">
+        <div class="p-gallery">
+          <div class="p-main-img">
+            <img src="assets/products/bitumen/bitumen-hero.jpg" alt="Bitumen Sealing Washers" id="bitumenMainImg">
+            <span class="p-badge" data-i18n="pb.tag">Self-Sealing · Waterproof</span>
+          </div>
+          <div class="p-thumbs" role="group" aria-label="Bitumen product images">
+            <button type="button" class="thumb active" data-target="bitumenMainImg" data-src="assets/products/bitumen/bitumen-hero.jpg"><img src="assets/products/bitumen/bitumen-hero.jpg" alt="Hero"></button>
+            <button type="button" class="thumb" data-target="bitumenMainImg" data-src="assets/products/bitumen/bitumen-single.jpg"><img src="assets/products/bitumen/bitumen-single.jpg" alt="Single"></button>
+            <button type="button" class="thumb" data-target="bitumenMainImg" data-src="assets/products/bitumen/bitumen-flake.jpg"><img src="assets/products/bitumen/bitumen-flake.jpg" alt="Reflective Flake"></button>
+            <button type="button" class="thumb" data-target="bitumenMainImg" data-src="assets/products/bitumen/bitumen-macro.jpg"><img src="assets/products/bitumen/bitumen-macro.jpg" alt="Macro"></button>
+            <button type="button" class="thumb" data-target="bitumenMainImg" data-src="assets/products/bitumen/bitumen-application.jpg"><img src="assets/products/bitumen/bitumen-application.jpg" alt="Application"></button>
+          </div>
+        </div>
+        <div class="p-info">
+          <h3 data-i18n="pb.h3">Bitumen Sealing Washers</h3>
+          <p class="p-lead" data-i18n="pb.desc">A bituminous sealing compound bonded to a galvanised steel or aluminium disc. On fastening, the compound compresses into every micro-gap — a permanent, maintenance-free watertight seal at every screw point.</p>
+          <ul class="p-specs">
+            <li data-i18n="pb.s1">Galvanised steel / aluminium base</li>
+            <li data-i18n="pb.s2">Reflective Flake series — UV &amp; weather resistant</li>
+            <li data-i18n="pb.s3">Sizes M5–M20 · OD 15–50 mm · 1.5–5 mm thickness</li>
+            <li data-i18n="pb.s4">Metal roofing, trapezoidal profiles, cladding &amp; solar mounting</li>
+            <li data-i18n="pb.s5">Zero maintenance — seals for 25–30+ years</li>
+          </ul>
+          <div class="p-actions">
+            <a class="btn btn-gold" href="contact.html?product=bitumen" data-i18n="pb.link">Request Bitumen Quote →</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PRODUCT CARD 2 — EPDM -->
+    <article class="product-card reveal" id="epdm" data-delay="0.1">
+      <div class="product-grid">
+        <div class="p-gallery">
+          <div class="p-main-img">
+            <img src="assets/products/epdm/epdm-group.jpg" alt="EPDM Sealing Washers" id="epdmMainImg">
+            <span class="p-badge" data-i18n="pe.tag">UV · Ozone · Chemical Resistant</span>
+          </div>
+          <div class="p-thumbs" role="group" aria-label="EPDM product images">
+            <button type="button" class="thumb active" data-target="epdmMainImg" data-src="assets/products/epdm/epdm-group.jpg"><img src="assets/products/epdm/epdm-group.jpg" alt="Group"></button>
+            <button type="button" class="thumb" data-target="epdmMainImg" data-src="assets/products/epdm/epdm-single.jpg"><img src="assets/products/epdm/epdm-single.jpg" alt="Single"></button>
+            <button type="button" class="thumb" data-target="epdmMainImg" data-src="assets/products/epdm/epdm-screws.jpg"><img src="assets/products/epdm/epdm-screws.jpg" alt="With Screws"></button>
+          </div>
+        </div>
+        <div class="p-info">
+          <h3 data-i18n="pe.h3">EPDM Composite Washers</h3>
+          <p class="p-lead" data-i18n="pe.desc">High-performance synthetic rubber bonded to stainless or galvanised backing, engineered for extreme weather service. It holds elasticity thermal-cycle after thermal-cycle without cracking.</p>
+          <ul class="p-specs">
+            <li data-i18n="pe.s1">Service range −40 °C to +120 °C</li>
+            <li data-i18n="pe.s2">25–30 year service life — UV &amp; ozone proof</li>
+            <li data-i18n="pe.s3">Metal roofing, HVAC, facade engineering &amp; automotive</li>
+            <li data-i18n="pe.s4">Sizes M5–M20 · Custom vulcanisation &amp; compounding</li>
+            <li data-i18n="pe.s5">Compatible with self-drilling &amp; wood construction screws</li>
+          </ul>
+          <div class="p-actions">
+            <a class="btn btn-gold" href="contact.html?product=epdm" data-i18n="pe.link">Request EPDM Quote →</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PRODUCT CARD 3 — CUSTOM ON-DEMAND PROCUREMENT -->
+    <article class="product-card reveal" id="custom" data-delay="0.2">
+      <div class="product-grid">
+        <div class="p-gallery">
+          <div class="p-main-img">
+            <img src="assets/products/custom-sourcing.jpg" alt="Custom Sourcing & Precision Engineering" id="customMainImg" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+            <span class="p-badge" data-i18n="px.tag">On-Demand Sourcing · 25–40% Advantage</span>
+          </div>
+        </div>
+        <div class="p-info">
+          <h3 data-i18n="px.h3">On-Demand Custom Procurement</h3>
+          <p class="p-lead" data-i18n="px.desc">Facing high prices, margin squeeze, or supplier delays in Europe? Tell us the component, DIN standard, or technical drawing you need — we audit verified Indian manufacturing plants, handle quality control, and deliver CIF to your European port.</p>
+          <ul class="p-specs">
+            <li data-i18n="px.s1">Custom metal stampings, brackets &amp; CNC machined parts</li>
+            <li data-i18n="px.s2">Specialized fasteners, screws &amp; anchoring hardware</li>
+            <li data-i18n="px.s3">25–40% cost savings compared to European domestic supply</li>
+            <li data-i18n="px.s4">Full export compliance, customs handling &amp; sea freight by our CHA</li>
+            <li data-i18n="px.s5">Sample production &amp; 3.1 material testing prior to bulk dispatch</li>
+          </ul>
+          <div class="p-actions">
+            <a class="btn btn-gold" href="contact.html?product=custom" data-i18n="px.link">Submit Custom Sourcing RFQ →</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ══════════ STATS ══════════ -->
+<section class="stats-band" aria-label="Key Figures">
+  <div class="container stats-grid">
+    <div class="stat-item reveal"><span class="stat-num" data-count="25" data-suffix="–40%">25–40%</span><span class="stat-lbl" data-i18n="st.1">Cost savings vs EU suppliers</span></div>
+    <div class="stat-item reveal" data-delay="0.1"><span class="stat-num" data-count="30" data-suffix="+ Yrs">30+ Yrs</span><span class="stat-lbl" data-i18n="st.2">Component service life</span></div>
+    <div class="stat-item reveal" data-delay="0.2"><span class="stat-num" data-count="10" data-suffix="k+">10k+</span><span class="stat-lbl" data-i18n="st.3">Minimum order units (MOQ)</span></div>
+    <div class="stat-item reveal" data-delay="0.3"><span class="stat-num">ISO / DIN</span><span class="stat-lbl" data-i18n="st.4">Certified manufacturing quality</span></div>
+  </div>
+</section>
+
+<!-- ══════════ WHY US ══════════ -->
+<section class="section" id="why">
+  <div class="container">
+    <div class="section-head text-center">
+      <p class="kicker reveal" data-i18n="w.kicker">03 — Why Ram ji Traders</p>
+      <h2 class="reveal" data-delay="0.1" data-i18n-html="w.title">A Sourcing Partner That Thinks<br>Like a <em class="gold-i">European Buyer.</em></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <span class="why-ico">💰</span>
+        <h3 data-i18n="w1t">Source-Direct Pricing</h3>
+        <p data-i18n="w1p">Established high-volume Indian manufacturers, one accountable export partner, zero stacked broker markups — typically 25–40% below European wholesale quotes.</p>
+      </div>
+      <div class="why-card reveal" data-delay="0.1">
+        <span class="why-ico">📜</span>
+        <h3 data-i18n="w2t">ISO &amp; DIN Compliance</h3>
+        <p data-i18n="w2p">We source only from proven manufacturers with documented, batch-tested quality control — EN 10204 3.1 certificates and test reports ship with every container.</p>
+      </div>
+      <div class="why-card reveal" data-delay="0.2">
+        <span class="why-ico">🤝</span>
+        <h3 data-i18n="w3t">European Business Mindset</h3>
+        <p data-i18n="w3p">Founder on the ground in Germany. We work the way European procurement expects: precise technical specs, reliable timelines, and transparent communication.</p>
+      </div>
+      <div class="why-card reveal" data-delay="0.3">
+        <span class="why-ico">📦</span>
+        <h3 data-i18n="w4t">Free Sample Kits</h3>
+        <p data-i18n="w4p">Test the material before you commit. We provide free sample boxes for material and laboratory testing — zero obligation.</p>
+      </div>
+      <div class="why-card reveal" data-delay="0.4">
+        <span class="why-ico">🚢</span>
+        <h3 data-i18n="w5t">Seamless Export Logistics</h3>
+        <p data-i18n="w5p">Direct ocean freight coordination from Nhava Sheva &amp; Mundra to Hamburg, Rotterdam, or Antwerp. Complete export customs &amp; shipping documentation handled end-to-end.</p>
+      </div>
+      <div class="why-card reveal" data-delay="0.5">
+        <span class="why-ico">🔍</span>
+        <h3 data-i18n="w6t">Open Sourcing Portal</h3>
+        <p data-i18n="w6p">Not limited to standard catalogue items. Tell us what product or material is costing you too much in Europe — we source and export it for you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section class="section about-section" id="about">
+  <div class="container">
+    <div class="about-box reveal">
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="kicker" data-i18n="a.kicker">About Ram ji Traders</p>
+          <h2 data-i18n-html="a.title">Direct Access to India’s<br><em class="gold-i">Manufacturing Strength.</em></h2>
+          <p data-i18n="a.p1">Ram ji Traders is an international merchant export and global sourcing partner bridging India’s high-precision manufacturing corridors with European industry.</p>
+          <p data-i18n="a.p2">Founded by Arya, based in Germany and operating with deep local roots across India's industrial hubs, we eliminate trading intermediaries so European businesses get factory-direct pricing with European compliance.</p>
+          <div class="about-facts">
+            <div><strong data-i18n="a.f1h">Location</strong><span data-i18n="a.f1d">Ghaziabad / NCR, India &amp; Germany</span></div>
+            <div><strong data-i18n="a.f2h">Core Capabilities</strong><span data-i18n="a.f2d">Sealing Washers, Custom Metal &amp; On-Demand Sourcing</span></div>
+            <div><strong data-i18n="a.f3h">Delivery Terms</strong><span data-i18n="a.f3d">FOB India · CIF European Ports · DDP on request</span></div>
+          </div>
+        </div>
+        <div class="about-side">
+          <div class="brochure-card">
+            <span class="bc-badge" data-i18n="as.cat">Product Brochure</span>
+            <h3 data-i18n="bs.h">Download Full Specifications</h3>
+            <p data-i18n="bs.p">Download our complete technical catalogue with dimension tables, material grades, packaging details, and direct contact info.</p>
+            <a class="btn btn-gold btn-full" href="Ramji-Traders-Product-Brochure.pdf" download data-i18n="btn.brochure">Download Catalogue (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CTA BAND ══════════ -->
+<section class="cta-band">
+  <div class="container cta-inner reveal">
+    <h2 data-i18n-html="c.title">Have a Sourcing Requirement or<br><em class="gold-i">Need a Competitive Benchmark?</em></h2>
+    <p data-i18n="c.sub">Send us your technical drawings, standard specs (DIN/ISO/EN), or sample requirements. We respond within 24 hours.</p>
+    <div class="cta-actions">
+      <a class="btn btn-gold btn-lg" href="contact.html" data-i18n="c.btn">Submit Sourcing RFQ</a>
+      <a class="btn btn-ghost btn-lg" href="tel:+4917637094937">+49 176 37094937 (DE)</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="f-col f-brand">
+      <span class="f-logo">
+        <img src="assets/logo.png?v=8" alt="Ram ji Traders">
+        <span>RAM JI <em>TRADERS</em></span>
+      </span>
+      <p data-i18n="f.about">Global Sourcing Partner and Merchant Exporter connecting certified Indian industrial manufacturing with European industry. Specializing in sealing washers, custom metal stampings, and on-demand product procurement.</p>
+    </div>
+    <div class="f-col">
+      <strong data-i18n="f.nav">Quick Links</strong>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#products" data-i18n="nav.products">Products &amp; Sourcing</a></li>
+        <li><a href="#why" data-i18n="nav.why">Why Us</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="contact.html" data-i18n="nav.quote">Request Quote</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <strong data-i18n="f.contact">Contact &amp; Inquiries</strong>
+      <ul>
+        <li><a href="mailto:export@ramjitraders.com">export@ramjitraders.com <i class="f-tag">EXPORT</i></a></li>
+        <li><a href="mailto:info@ramjitraders.com">info@ramjitraders.com <i class="f-tag">INFO</i></a></li>
+        <li><a href="tel:+4917637094937">+49 176 37094937 <i class="f-tag">DE</i></a></li>
+        <li><a href="tel:+919821716462">+91 98217 16462 <i class="f-tag">IN</i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container f-bottom">
+    <span>© 2026 Ram ji Traders. All rights reserved.</span>
+    <span>Global Sourcing Partner · Made in India · Delivered to Europe</span>
+  </div>
+</footer>
+
+<script src="js/i18n.js?v=8"></script>
+<script src="js/main.js?v=8"></script>
+<script src="js/journey.js?v=8"></script>
+</body>
+</html>
