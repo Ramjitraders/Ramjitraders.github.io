@@ -11,241 +11,369 @@
   var D = {
     /* ────────────────────── ENGLISH (default) ────────────────────── */
     en: {
-      'nav.journey': 'The Journey', 'nav.products': 'Products', 'nav.why': 'Why Us',
-      'nav.about': 'About', 'nav.quote': 'Request a Quote',
+      'nav.journey': 'The Journey', 
+      'nav.products': 'Products & Sourcing', 
+      'nav.why': 'Why Us',
+      'nav.about': 'About', 
+      'nav.quote': 'Request Sourcing / Quote',
       'hero.kicker': 'Ram ji Traders — Global Sourcing Partner · India → Europe',
-      'hero.title': 'Industrial Washers,<br><em class="gold-i">Sealed for a Lifetime.</em>',
-      'hero.sub': 'Bitumen & EPDM washers from India’s leading manufacturers — our current specialization, delivered to Europe by a partner who spent two years on the ground in Germany learning how European business works. The same quality assurance and hassle-free procurement will carry every product category we add next.',
-      'hero.cta2': 'Watch the Journey ↓',
-      'chip.bitumen': 'Bitumen Washers', 'chip.epdm': 'EPDM Washers', 'chip.partner': 'Global Sourcing Partner', 'chip.expand': 'More Categories Coming',
+      'hero.title': 'What Products Are Costing You<br><em class="gold-i">Too Much in Europe?</em>',
+      'hero.sub': 'We bridge your supply gaps with direct manufacturer exports from India. From specialized sealing washers (M5–M20) to custom metal stampings and on-demand components — tell us what products you need, and we source them 25–40% cheaper with strict ISO/DIN compliance.',
+      'hero.cta2': 'Explore Capabilities ↓',
+      'chip.bitumen': 'Bitumen Sealing Washers', 
+      'chip.epdm': 'EPDM Composite Washers', 
+      'chip.stampings': 'Custom Metal & Hardware',
+      'chip.custom': 'On-Demand Sourcing',
       'ui.scroll': 'SCROLL',
       'btn.brochure': 'Download Catalogue (PDF)',
-      'bs.h': 'Take the Full Catalogue With You',
-      'bs.p': 'All specs, size charts, packaging details and our direct contacts — one clean 7-page PDF, ready to share with your purchasing team.',
+      'bs.h': 'Download Full Specifications',
+      'bs.p': 'Download our complete technical catalogue with dimension tables, material grades, packaging details, and direct contact info.',
       'as.cat': 'Product Catalogue',
-      'as.catp': 'All specs & sizes in one 7-page PDF — easy to forward to your purchasing team.',
-      'tick.1': 'Bitumen Washers', 'tick.2': 'EPDM Washers', 'tick.3': 'ISO & BIS-Certified Partners',
-      'tick.4': 'Global Sourcing Partner', 'tick.5': '2 Years on the Ground in Germany',
-      'tick.6': 'India → Europe', 'tick.7': '25–30 Yr Service Life', 'tick.8': 'Hassle-Free Procurement, Every Category',
+      'as.catp': 'All specs & sizes in one clean PDF — easy to forward to your purchasing team.',
+      'tick.1': 'Global Sourcing Partner', 
+      'tick.2': 'Bitumen & EPDM Washers',
+      'tick.3': 'Custom Metal Stampings', 
+      'tick.4': '25–40% Margin Advantage',
+      'tick.5': 'ISO & BIS-Certified Factories', 
+      'tick.6': 'On-Demand Custom Procurement',
+      'tick.7': 'Direct Ocean Freight to Europe',
       'j.kicker': '01 — The Journey',
-      'j.title': 'From Our Partner Factories<br>to a <em class="gold-i">European Harbour.</em>',
+      'j.title': 'From Certified Indian Mills<br>to a <em class="gold-i">European Harbour.</em>',
       'j.note': 'Scroll down — your scroll drives the truck, the crane and the ship.',
       'ch.1': 'Origin', 'ch.2': 'Haulage', 'ch.3': 'Loading', 'ch.4': 'Ocean', 'ch.5': 'Arrival',
       'j.hint': 'Keep scrolling to move ↓',
       'jf.kicker': 'All From One Hand',
-      'jf.title': 'Sealed in India.<br><em class="gold-i">Delivered across Europe.</em>',
-      'jf.sub': 'One sourcing partner — from India’s production lines to your warehouse door.',
-      'jf.btn1': 'Start Your Order', 'jf.btn2': 'See the Products ↓',
-      'p.kicker': '02 — The Products',
-      'p.title': 'Two Products Today.<br><em class="gold-i">A Growing Catalogue.</em>',
-      'p.note': 'Bitumen and EPDM washers are where we started — rigorously vetted, quality-assured and ready to ship today. As we qualify more of India’s leading manufacturers, further product categories will join this catalogue, each held to the same standard.',
-      'pb.tag': 'Self-Sealing · Waterproof', 'pb.h3': 'Bitumen Washers',
-      'pb.desc': 'A bituminous sealing compound bonded to a galvanised steel or aluminium disc. On fastening, the compound compresses into every micro-gap — a permanent, maintenance-free watertight seal at every point.',
-      'pb.s1': 'Galvanised steel / aluminium base', 'pb.s2': 'Reflective Flake series — UV & weather resistant',
-      'pb.s3': 'Sizes M5–M20 · OD 15–50 mm · 1.5–5 mm', 'pb.s4': 'Metal roofing, cladding & solar mounting',
-      'pb.s5': 'Zero maintenance — seals for life',
+      'jf.title': 'Manufactured in India.<br><em class="gold-i">Delivered across Europe.</em>',
+      'jf.sub': 'One accountable export partner — from India’s heavy production lines directly to your warehouse door.',
+      'jf.btn1': 'Request Custom Sourcing', 
+      'jf.btn2': 'Explore Product Lines ↓',
+      'p.kicker': '02 — Sourcing Capabilities',
+      'p.title': 'Core Specializations &<br><em class="gold-i">Custom Sourcing.</em>',
+      'pb.tag': 'Self-Sealing · Waterproof', 
+      'pb.h3': 'Bitumen Sealing Washers',
+      'pb.desc': 'A bituminous sealing compound bonded to a galvanised steel or aluminium disc. On fastening, the compound compresses into every micro-gap — a permanent, maintenance-free watertight seal at every screw point.',
+      'pb.s1': 'Galvanised steel / aluminium base', 
+      'pb.s2': 'Reflective Flake series — UV & weather resistant',
+      'pb.s3': 'Sizes M5–M20 · OD 15–50 mm · 1.5–5 mm thickness', 
+      'pb.s4': 'Metal roofing, trapezoidal profiles, cladding & solar mounting',
+      'pb.s5': 'Zero maintenance — seals for 25–30+ years',
       'pb.link': 'Request Bitumen Quote →',
       'pb.thumbcap': 'Hex-nut assembly · Reflective Flake · Uniform coat · Roofing detail',
-      'pe.tag': 'UV · Ozone · Chemical Resistant', 'pe.h3': 'EPDM Washers',
-      'pe.desc': 'High-performance synthetic rubber engineered for extreme service. It holds its seal thermal-cycle after thermal-cycle — where neoprene and natural rubber crack, EPDM endures. The global long-life standard.',
-      'pe.s1': 'Service range −40 °C to +120 °C', 'pe.s2': '25–30 year service life',
-      'pe.s3': 'Roofing, HVAC, automotive & marine', 'pe.s4': 'Sizes M5–M20 · custom compounding',
+      'pe.tag': 'UV · Ozone · Chemical Resistant', 
+      'pe.h3': 'EPDM Composite Washers',
+      'pe.desc': 'High-performance synthetic rubber bonded to stainless or galvanised backing, engineered for extreme weather service. It holds elasticity thermal-cycle after thermal-cycle without cracking.',
+      'pe.s1': 'Service range −40 °C to +120 °C', 
+      'pe.s2': '25–30 year service life — UV & ozone proof',
+      'pe.s3': 'Metal roofing, HVAC, facade engineering & automotive', 
+      'pe.s4': 'Sizes M5–M20 · Custom vulcanisation & compounding',
+      'pe.s5': 'Compatible with self-drilling & wood construction screws',
       'pe.link': 'Request EPDM Quote →',
       'pe.thumbcap': 'Bonded washer close-up · On self-drilling roofing screws',
-      'st.1': 'Lower cost vs EU suppliers', 'st.2': 'EPDM washer service life',
-      'st.3': 'Minimum order units from', 'st.4': 'In Germany — EU business mindset',
+      'px.tag': 'On-Demand Sourcing · 25–40% Advantage',
+      'px.h3': 'On-Demand Custom Procurement',
+      'px.desc': 'Facing high prices, margin squeeze, or supplier delays in Europe? Tell us the component, DIN standard, or technical drawing you need — we audit verified Indian manufacturing plants, handle quality control, and deliver CIF to your European port.',
+      'px.s1': 'Custom metal stampings, brackets & CNC machined parts',
+      'px.s2': 'Specialized fasteners, screws & anchoring hardware',
+      'px.s3': '25–40% cost savings compared to European domestic supply',
+      'px.s4': 'Full export compliance, customs handling & sea freight by our CHA',
+      'px.s5': 'Sample production & 3.1 material testing prior to bulk dispatch',
+      'px.link': 'Submit Custom Sourcing RFQ →',
+      'st.1': 'Cost savings vs EU suppliers', 
+      'st.2': 'Component service life',
+      'st.3': 'Minimum order units from', 
+      'st.4': 'Certified manufacturing standards',
       'w.kicker': '03 — Why Ram ji Traders',
-      'w.title': 'A Partner That Thinks<br>Like a <em class="gold-i">European Buyer.</em>',
-      'w1t': 'Source-Direct Pricing', 'w1p': 'Established high-volume Indian manufacturers, one accountable export partner, no stacked margins — typically 25–40% below European quotes.',
-      'w2t': 'ISO & BIS-Certified Partners', 'w2p': 'We source only from proven manufacturers with documented, batch-tested quality control — certificates and test reports ship with your order.',
-      'w3t': 'European Business Mindset', 'w3p': 'Two years living and working in Germany taught us the standard: precise specs, honest timelines, written confirmations — no surprises.',
-      'w4t': 'Custom Sizes & Branding', 'w4p': 'Diameters, thicknesses, compounds and private-label packaging arranged with our manufacturing partners — your brand, their craft.',
-      'w5t': 'Complete Export Documentation', 'w5p': 'COO, Bill of Lading, Commercial Invoice and Packing List handled end-to-end. Your customs broker receives a complete, clean file.',
-      'w6t': 'Dedicated Export Manager', 'w6p': 'One point of contact from inquiry to delivery — same person, fast answers, proactive updates in your time zone.',
-      'w7t': 'A Growing Catalogue', 'w7p': 'Washers are where we started, not where we stop. As we qualify new manufacturing partners across categories, every addition passes the same quality assurance and hassle-free procurement standard you see here today.',
+      'w.title': 'A Sourcing Partner That Thinks<br>Like a <em class="gold-i">European Buyer.</em>',
+      'w1t': 'Source-Direct Pricing', 
+      'w1p': 'Established high-volume Indian manufacturers, one accountable export partner, zero stacked broker markups — typically 25–40% below European wholesale quotes.',
+      'w2t': 'ISO & DIN Compliance', 
+      'w2p': 'We source only from proven manufacturers with documented, batch-tested quality control — EN 10204 3.1 certificates and test reports ship with every container.',
+      'w3t': 'European Business Mindset', 
+      'w3p': 'Founder on the ground in Germany. We work the way European procurement expects: precise technical specs, reliable timelines, and transparent communication.',
+      'w4t': 'Free Sample Kits', 
+      'w4p': 'Test the material before you commit. We provide free sample boxes for material and laboratory testing — zero obligation.',
+      'w5t': 'Seamless Export Logistics', 
+      'w5p': 'Direct ocean freight coordination from Nhava Sheva & Mundra to Hamburg, Rotterdam, or Antwerp. Complete export customs & shipping documentation handled end-to-end.',
+      'w6t': 'Open Sourcing Portal', 
+      'w6p': 'Not limited to standard catalogue items. Tell us what product or material is costing you too much in Europe — we source and export it for you.',
       'a.kicker': '04 — About',
-      'a.big': 'Trust is not claimed.<br>It is <em class="gold-i">sealed into every shipment</em> — washer by washer, container by container.',
-      'a.chip1': 'Reliability', 'a.chip2': 'Transparency', 'a.chip3': 'Long-Term Partnership',
-      'a.p1': 'Ram ji Traders is a global sourcing and quality-assurance partner based in India. We currently work with the country’s established bitumen and EPDM washer manufacturers — producers with proven market strength at home — and connect their products with buyers worldwide, with new product categories joining our catalogue as we qualify further manufacturing partners.',
-      'a.p2': 'Our edge is cultural: after two years living and doing business in Germany, we work the way European procurement expects — clear specifications, firm quotations, punctual dispatch and complete, trustworthy documentation. That same standard will apply to every product line we add.',
-      'a.dt1': 'Products', 'a.dd1': 'Bitumen & EPDM Washers — more soon',
+      'a.big': 'Direct access to India’s<br><em class="gold-i">manufacturing strength.</em>',
+      'a.chip1': 'Reliability', 'a.chip2': 'Transparency', 'a.chip3': 'Direct Factory Sourcing',
+      'a.p1': 'Ram ji Traders is an international merchant export and global sourcing partner bridging India’s high-precision manufacturing corridors with European industry.',
+      'a.p2': 'Founded by Arya, based in Germany and operating with deep local roots across India\'s industrial hubs, we eliminate trading intermediaries so European businesses get factory-direct pricing with European compliance.',
+      'a.dt1': 'Core Lines', 'a.dd1': 'Washers & Custom Sourcing',
       'a.dt2': 'Model', 'a.dd2': 'Global Sourcing & Export',
       'a.dt3': 'Focus Markets', 'a.dd3': 'Europe & Worldwide',
-      'a.dt4': 'Certification', 'a.dd4': 'ISO & BIS (Partner Factories)',
-      'c.title': 'Let’s seal your<br><em class="gold-i">next project.</em>',
-      'c.p': 'Request a quotation or a sample set — we reply within 24 hours.',
-      'c.btn': 'Contact Us',
-      'f.brand': 'Global sourcing and quality-assurance partner for India’s manufacturing base — currently specializing in bitumen and EPDM washers, with new product categories joining our catalogue over time.',
-      'f.contact': 'Contact', 'f.explore': 'Explore', 'f.base': 'India · Export Worldwide',
-      'f.rights': 'All rights reserved.', 'f.madein': 'Bitumen & EPDM Washers Today · Made in India',
-      /* contact page */
-      'ph.kicker': 'Contact',
-      'ph.title': 'Let’s Talk <em class="gold-i">Sourcing.</em>',
-      'ph.sub': 'Quotes, samples, technical specifications or a joint sourcing plan — we reply within 24 hours.',
-      'fm.name': 'Full Name *', 'fm.company': 'Company', 'fm.country': 'Country',
-      'fm.email': 'Business Email *', 'fm.phone': 'Phone / WhatsApp', 'fm.product': 'Product Interest *',
-      'fm.qty': 'Estimated Quantity', 'fm.msg': 'Your Requirements *',
-      'fm.btn': 'Send Inquiry',
-      'fm.opt0': 'Select a product', 'fm.opt1': 'Bitumen Washers', 'fm.opt2': 'EPDM Washers',
-      'fm.opt3': 'Both — Bitumen & EPDM', 'fm.opt4': 'Custom Specification', 'fm.opt5': 'Something Else / Future Product Inquiry',
-      'fm.phcountry': 'e.g. Germany', 'fm.phqty': 'e.g. 50,000 pcs / month',
-      'fm.phmsg': 'Sizes, materials, packaging, target price, delivery port — anything that helps us quote precisely.',
+      'a.dt4': 'Incoterms', 'a.dd4': 'FOB India / CIF Europe',
+      'c.kicker': '05 — Next Step',
+      'c.title': 'Have a Sourcing Requirement or<br><em class="gold-i">Need a Competitive Benchmark?</em>',
+      'c.p': 'Send us your technical drawings, standard specs (DIN/ISO/EN), or sample requirements. We respond within 24 hours.',
+      'c.btn': 'Submit Sourcing RFQ',
+      'c.call': 'Direct Line (Germany)',
+      'f.brand': 'Global sourcing partner and merchant exporter connecting India’s leading industrial manufacturers with buyers across Europe and worldwide.',
+      'f.contact': 'Contact',
+      'f.explore': 'Explore',
+      'f.rights': 'All rights reserved.',
+      'f.madein': 'Global Sourcing Partner · Made in India',
+      'f.base': 'India · Export Worldwide',
+      'cpg.kicker': 'Global Sourcing Portal · India → Europe',
+      'cpg.title': 'Tell Us What You Need Sourced.<br><em class="gold-i">We Bridge Your Supply Gaps.</em>',
+      'cpg.sub': 'Whether you need specialized sealing washers or custom industrial components to cut your European procurement costs by 25–40% — request a benchmark quotation or complimentary sample kit. We reply within 24 hours.',
+      'fm.name': 'Full Name *', 'fm.company': 'Company *',
+      'fm.country': 'Country', 'fm.phcountry': 'e.g. Germany',
+      'fm.email': 'Business Email *', 'fm.phone': 'Phone / WhatsApp',
+      'fm.product': 'Product / Sourcing Requirement *',
+      'fm.opt0': 'Select a category',
+      'opt.bitumen': 'Bitumen Sealing Washers (M5–M20)',
+      'opt.epdm': 'EPDM Composite Sealing Washers',
+      'opt.stampings': 'Custom Metal Stampings & Fasteners',
+      'opt.other': 'Custom Sourcing / Other Product RFQ',
+      'fm.qty': 'Estimated Quantity / Volume',
+      'fm.msg': 'Technical Specifications, Standards & Inquiries *',
+      'ph.name': 'e.g. Thomas Müller', 'ph.company': 'e.g. Müller Bau GmbH',
+      'ph.email': 'e.g. t.mueller@company.de',
+      'ph.qty': 'e.g. 50,000 pcs / 2,000 meters / 1 FCL',
+      'ph.msg': 'Tell us your required dimensions, DIN/ISO standards, material grade, or target delivery port in Europe...',
+      'fm.btn': 'Send Sourcing Request →',
       'fm.note': 'Submitting sends your inquiry straight to our inbox <a href="mailto:export@ramjitraders.com">export@ramjitraders.com</a> — no email app or account needed.',
-      'fm.success': '✓ Thank you — your inquiry has been sent to our team. We reply within 24 hours. Prefer direct email? <a href="mailto:export@ramjitraders.com">export@ramjitraders.com</a>',
+      'fm.success': '✓ Thank you — your sourcing inquiry has been received. We will review your specifications and reply within 24 hours. Direct email: <a href="mailto:export@ramjitraders.com">export@ramjitraders.com</a>',
       'fm.err': '⚠️ Auto-send failed (network issue). Please email us directly at <a href="mailto:export@ramjitraders.com">export@ramjitraders.com</a> — we reply within 24 hours.',
-      'as.direct': 'Direct Contact', 'as.email': 'Email',
-      'as.em1': 'Orders & Quotes', 'as.em2': 'General Inquiries',
+      'as.direct': 'Direct Contact',
+      'as.em1': 'Orders & Sourcing RFQs', 'as.em2': 'General Inquiries',
       'as.in': 'India · Phone / WhatsApp', 'as.de': 'Germany · Phone / WhatsApp',
       'as.resp': 'Response Time', 'as.respv': 'Within 24 hours',
-      'as.markets': 'Markets', 'as.marketsv': 'Europe · Worldwide',
+      'as.markets': 'Delivery', 'as.marketsv': 'FOB India / CIF Europe',
       'st.h': 'What Happens Next',
-      'st1': '<b>Send this form.</b> Tell us sizes, volumes and destination.',
-      'st2': '<b>Get specs + pricing.</b> Full quotation within 24 hours.',
-      'st3': '<b>Approve samples.</b> Test quality, then we ship.',
+      'st1': '<b>Send this form.</b> Tell us your specs, drawings, or volume.',
+      'st2': '<b>Get specs + pricing.</b> Full benchmark quote within 24 hours.',
+      'st3': '<b>Approve samples.</b> Free sample kits tested, then we ship.',
       'cert.tag': 'ISO & BIS-Certified Partners · Sourced in India · 2 Yrs in Germany'
     },
-    /* ────────────────────── DEUTSCH ────────────────────── */
+
+    /* ────────────────────── GERMAN (DE) ────────────────────── */
     de: {
-      'nav.journey': 'Die Reise', 'nav.products': 'Produkte', 'nav.why': 'Warum wir',
-      'nav.about': 'Über uns', 'nav.quote': 'Angebot anfordern',
-      'hero.kicker': 'Ram ji Traders — Globaler Sourcing-Partner · Indien → Europa',
-      'hero.title': 'Industrielle Dichtscheiben,<br><em class="gold-i">auf Lebenszeit versiegelt.</em>',
-      'hero.sub': 'Bitumen- und EPDM-Scheiben von Indiens führenden Herstellern — unser aktueller Schwerpunkt, geliefert nach Europa von einem Partner, der zwei Jahre vor Ort in Deutschland die europäische Geschäftskultur kennengelernt hat. Dieselbe Qualitätssicherung und der gleiche unkomplizierte Beschaffungsprozess gelten für jede Produktkategorie, die wir als Nächstes hinzufügen.',
-      'hero.cta2': 'Reise ansehen ↓',
-      'chip.bitumen': 'Bitumenscheiben', 'chip.epdm': 'EPDM-Scheiben', 'chip.partner': 'Globaler Sourcing-Partner', 'chip.expand': 'Weitere Kategorien folgen',
+      'nav.journey': 'Lieferweg', 
+      'nav.products': 'Produkte & Sourcing', 
+      'nav.why': 'Vorteile',
+      'nav.about': 'Über uns', 
+      'nav.quote': 'Sourcing / Angebot anfragen',
+      'hero.kicker': 'Ram ji Traders — Globaler Beschaffungspartner · Indien → Europa',
+      'hero.title': 'Welche Produkte belasten<br><em class="gold-i">Ihre Marge in Europa?</em>',
+      'hero.sub': 'Wir schließen Ihre Lieferlücken durch direkten Herstellerexport aus Indien. Von spezialisierten Dichtscheiben (M5–M20) bis hin zu individuellen Metallstanzteilen und Komponenten nach Maß — nennen Sie uns Ihren Bedarf, wir beschaffen 25–40 % günstiger mit strenger DIN-/ISO-Konformität.',
+      'hero.cta2': 'Kompetenzen ansehen ↓',
+      'chip.bitumen': 'Bitumen-Dichtscheiben', 
+      'chip.epdm': 'EPDM-Verbundscheiben', 
+      'chip.stampings': 'Metallwaren & Stanzteile',
+      'chip.custom': 'Individuelle Beschaffung',
       'ui.scroll': 'SCROLLEN',
       'btn.brochure': 'Katalog herunterladen (PDF)',
-      'bs.h': 'Der komplette Katalog zum Mitnehmen',
-      'bs.p': 'Alle Spezifikationen, Größentabellen, Verpackungsdetails und unsere direkten Kontakte — ein übersichtliches 7-seitiges PDF für Ihren Einkauf.',
+      'bs.h': 'Vollständige Spezifikationen',
+      'bs.p': 'Laden Sie unseren kompletten technischen Katalog mit Maßtabellen, Werkstoffen, Verpackungseinheiten und Direktkontakten herunter.',
       'as.cat': 'Produktkatalog',
-      'as.catp': 'Alle technischen Daten & Größen in einem 7-seitigen PDF — ideal zum Weiterleiten an Ihren Einkauf.',
-      'tick.1': 'Bitumenscheiben', 'tick.2': 'EPDM-Scheiben', 'tick.3': 'ISO- & BIS-zertifizierte Partner',
-      'tick.4': 'Globaler Sourcing-Partner', 'tick.5': '2 Jahre vor Ort in Deutschland',
-      'tick.6': 'Indien → Europa', 'tick.7': '25–30 Jahre Lebensdauer', 'tick.8': 'Unkomplizierte Beschaffung, jede Kategorie',
-      'j.kicker': '01 — Die Reise',
-      'j.title': 'Von unseren Partnerwerken<br>bis zu einem <em class="gold-i">europäischen Hafen.</em>',
-      'j.note': 'Scrollen Sie — Ihr Scrollen steuert Lkw, Kran und Schiff.',
-      'ch.1': 'Ursprung', 'ch.2': 'Transport', 'ch.3': 'Verladung', 'ch.4': 'Ozean', 'ch.5': 'Ankunft',
-      'j.hint': 'Zum Bewegen weiter scrollen ↓',
+      'as.catp': 'Alle Maße & Spezifikationen im kompakten PDF — ideal zur Weiterleitung an Ihren Einkauf.',
+      'tick.1': 'Globaler Beschaffungspartner', 
+      'tick.2': 'Bitumen- & EPDM-Dichtscheiben',
+      'tick.3': 'Individuelle Metallstanzteile', 
+      'tick.4': '25–40 % Margenvorteil',
+      'tick.5': 'ISO & BIS-zertifizierte Werke', 
+      'tick.6': 'Individuelle Beschaffung nach Maß',
+      'tick.7': 'Direkte Seefracht nach Europa',
+      'j.kicker': '01 — Der Lieferweg',
+      'j.title': 'Vom indischen Herstellerwerk<br>in den <em class="gold-i">europäischen Hafen.</em>',
+      'j.note': 'Scrollen Sie nach unten — Ihre Bewegung steuert Lkw, Kran und Frachtschiff.',
+      'ch.1': 'Herkunft', 'ch.2': 'Transport', 'ch.3': 'Verladung', 'ch.4': 'Seefracht', 'ch.5': 'Ankunft',
+      'j.hint': 'Weiter scrollen ↓',
       'jf.kicker': 'Alles aus einer Hand',
-      'jf.title': 'Versiegelt in Indien.<br><em class="gold-i">Geliefert in ganz Europa.</em>',
-      'jf.sub': 'Ein Sourcing-Partner — von Indiens Produktionslinien bis vor Ihre Lagertür.',
-      'jf.btn1': 'Anfrage starten', 'jf.btn2': 'Produkte ansehen ↓',
-      'p.kicker': '02 — Die Produkte',
-      'p.title': 'Zwei Produkte heute.<br><em class="gold-i">Ein wachsender Katalog.</em>',
-      'p.note': 'Bitumen- und EPDM-Scheiben waren unser Anfang — sorgfältig geprüft, qualitätsgesichert und ab sofort lieferbar. Sobald wir weitere führende indische Hersteller qualifizieren, ergänzen zusätzliche Produktkategorien diesen Katalog — jede nach demselben Standard für Qualitätssicherung und unkomplizierte Beschaffung.',
-      'pb.tag': 'Selbstdichtend · Wasserdicht', 'pb.h3': 'Bitumenscheiben',
-      'pb.desc': 'Eine bituminöse Dichtmasse, verbunden mit einer Scheibe aus verzinktem Stahl oder Aluminium. Beim Verschrauben presst sich die Masse in jeden Mikrospalt — eine dauerhafte, wartungsfreie, wasserdichte Verbindung an jedem Punkt.',
-      'pb.s1': 'Träger aus verzinktem Stahl / Aluminium', 'pb.s2': 'Reflective-Flake-Serie — UV- & witterungsbeständig',
-      'pb.s3': 'Größen M5–M20 · AD 15–50 mm · 1,5–5 mm', 'pb.s4': 'Blechdächer, Fassaden & Solarmontage',
-      'pb.s5': 'Wartungsfrei — dichtet ein Leben lang',
-      'pb.link': 'Bitumen-Angebot anfordern →',
-      'pb.thumbcap': 'Sechskantmutter-Montage · Reflective Flake · Gleichmäßige Beschichtung · Dachdetail',
-      'pe.tag': 'UV- · Ozon- & Chemikalienbeständig', 'pe.h3': 'EPDM-Scheiben',
-      'pe.desc': 'Hochleistungs-Synthesekautschuk für extremste Bedingungen. Hält seine Dichtung Temperaturwechsel für Temperaturwechsel — wo Neopren und Naturkautschuk reißen, hält EPDM stand. Der weltweite Standard für lange Lebensdauer.',
-      'pe.s1': 'Einsatzbereich −40 °C bis +120 °C', 'pe.s2': '25–30 Jahre Lebensdauer',
-      'pe.s3': 'Dach, Lüftung/Klima, Automotive & Marine', 'pe.s4': 'Größen M5–M20 · kundenspezifische Mischungen',
-      'pe.link': 'EPDM-Angebot anfordern →',
-      'pe.thumbcap': 'Bonded-Scheibe im Detail · Auf selbstbohrenden Dachschrauben',
-      'st.1': 'Günstiger als EU-Anbieter', 'st.2': 'Lebensdauer von EPDM-Scheiben',
-      'st.3': 'Mindestbestellmenge ab', 'st.4': 'In Deutschland — EU-Geschäftsverständnis',
-      'w.kicker': '03 — Warum Ram ji Traders',
-      'w.title': 'Ein Partner, der denkt<br>wie ein <em class="gold-i">europäischer Einkäufer.</em>',
-      'w1t': 'Preise nah an der Quelle', 'w1p': 'Etablierte indische Großhersteller, ein verantwortlicher Exportpartner, keine doppelten Margen — typischerweise 25–40 % unter europäischen Angeboten.',
-      'w2t': 'ISO- & BIS-zertifizierte Partner', 'w2p': 'Wir beziehen ausschließlich von bewährten Herstellern mit dokumentierter, chargengeprüfter Qualitätskontrolle — Zertifikate und Prüfberichte liegen jeder Lieferung bei.',
-      'w3t': 'Europäische Geschäftsdenkweise', 'w3p': 'Zwei Jahre Leben und Arbeiten in Deutschland haben uns den Standard gelehrt: präzise Spezifikationen, ehrliche Zeitpläne, schriftliche Bestätigungen — keine Überraschungen.',
-      'w4t': 'Sondermaße & Eigenmarke', 'w4p': 'Durchmesser, Stärken, Materialien und Private-Label-Verpackung — abgestimmt mit unseren Fertigungspartnern. Ihre Marke, ihr Handwerk.',
-      'w5t': 'Lückenlose Exportdokumente', 'w5p': 'COO, Bill of Lading, Handelsrechnung und Packliste — komplett abgewickelt. Ihr Zollagent erhält eine saubere, vollständige Akte.',
-      'w6t': 'Fester Export-Ansprechpartner', 'w6p': 'Ein Ansprechpartner von der Anfrage bis zur Lieferung — dieselbe Person, schnelle Antworten, aktive Updates in Ihrer Zeitzone.',
-      'w7t': 'Ein wachsender Katalog', 'w7p': 'Dichtscheiben sind unser Anfang, nicht unser Ende. Während wir neue Fertigungspartner in weiteren Kategorien qualifizieren, durchläuft jede Erweiterung dieselbe Qualitätssicherung und denselben unkomplizierten Beschaffungsstandard, den Sie heute hier sehen.',
+      'jf.title': 'Gefertigt in Indien.<br><em class="gold-i">Geliefert nach ganz Europa.</em>',
+      'jf.sub': 'Ein verlässlicher Partner — von den industriellen Produktionslinien in Indien bis zu Ihrem Werkstor.',
+      'jf.btn1': 'Individuelle Anfrage starten', 
+      'jf.btn2': 'Produktlinien ansehen ↓',
+      'p.kicker': '02 — Beschaffungskompetenz',
+      'p.title': 'Kernkompetenzen &<br><em class="gold-i">Individuelle Beschaffung.</em>',
+      'pb.tag': 'Selbstabdichtend · Wasserdicht', 
+      'pb.h3': 'Bitumen-Dichtscheiben',
+      'pb.desc': 'Vulkanisierte Bitumen-Dichtmasse auf verzinktem Stahl- oder Aluminiumträger. Beim Verschrauben presst sich die Masse in jede Mikrofuge — für eine dauerhafte, wartungsfreie Abdichtung an jedem Schraubpunkt.',
+      'pb.s1': 'Träger aus verzinktem Stahl oder Aluminium', 
+      'pb.s2': 'Reflective-Flake-Serie — UV- & witterungsbeständig',
+      'pb.s3': 'Größen M5–M20 · AD 15–50 mm · Stärken 1,5–5 mm', 
+      'pb.s4': 'Metalldächer, Trapezbleche, Fassadenbau & Solarmontage',
+      'pb.s5': 'Vollkommen wartungsfrei — 25–30+ Jahre Dichtwirkung',
+      'pb.link': 'Bitumen-Angebot anfragen →',
+      'pb.thumbcap': 'Hex-Mutter-Montage · Reflective Flake · Gleichmäßige Schicht · Dachdetail',
+      'pe.tag': 'UV- · Ozon- · Chemikalienbeständig', 
+      'pe.h3': 'EPDM-Verbundscheiben',
+      'pe.desc': 'Hochleistungs-Synthesekautschuk auf Edelstahl- oder verzinktem Träger für anspruchsvollste Witterungseinflüsse. Behält seine Elastizität über Jahrzehnte ohne Versprödung.',
+      'pe.s1': 'Temperaturbereich −40 °C bis +120 °C', 
+      'pe.s2': '25–30 Jahre Lebensdauer — UV- und ozonfest',
+      'pe.s3': 'Dachbau, HLK-Technik, Fassadenbau & Fahrzeugbau', 
+      'pe.s4': 'Größen M5–M20 · Kundenspezifische Vulkanisation',
+      'pe.s5': 'Kompatibel mit Bohrschrauben und Holzbauschrauben',
+      'pe.link': 'EPDM-Angebot anfragen →',
+      'pe.thumbcap': 'Verbundscheibe Nahaufnahme · Auf Bohrschrauben für Dächer',
+      'px.tag': 'Individuelle Beschaffung · 25–40 % Vorteil',
+      'px.h3': 'Individuelle Beschaffung nach Maß',
+      'px.desc': 'Stehen Sie in Europa unter Margendruck, hohen Einkaufspreisen oder Lieferverzögerungen? Sagen Sie uns, welches Bauteil, welche DIN-Norm oder Zeichnung Sie benötigen — wir prüfen zertifizierte Herstellerwerke in Indien, sichern die Qualität und liefern CIF europäischen Hafen.',
+      'px.s1': 'Individuelle Metallstanzteile, Halterungen & CNC-Präzisionsteile',
+      'px.s2': 'Spezialschrauben, Verbindungstechnik & Verankerungselemente',
+      'px.s3': '25–40 % Einsparpotenzial gegenüber europäischem Großhandel',
+      'px.s4': 'Vollständige Exportabwicklung, Zollabwicklung & Seefracht',
+      'px.s5': 'Musterfertigung & 3.1 Materialprüfung vor dem Serienversand',
+      'px.link': 'Individuelle Anfrage einreichen →',
+      'st.1': 'Kostenvorteil ggü. EU-Preisen', 
+      'st.2': 'Bauteil-Lebensdauer',
+      'st.3': 'Mindestbestellmenge ab', 
+      'st.4': 'Zertifizierte Industriestandards',
+      'w.kicker': '03 — Ihre Vorteile',
+      'w.title': 'Ein Beschaffungspartner, der wie ein<br><em class="gold-i">europäischer Einkäufer denkt.</em>',
+      'w1t': 'Preise direkt vom Hersteller', 
+      'w1p': 'Etablierte indische Großserienhersteller, ein verantwortlicher Exportpartner, null Händleraufschläge — i. d. R. 25–40 % unter europäischen Großhandelspreisen.',
+      'w2t': 'ISO- & DIN-Konformität', 
+      'w2p': 'Wir arbeiten ausschließlich mit geprüften Werken und chargenbezogener Qualitätsprüfung — EN 10204 3.1 Zeugnisse und Prüfberichte liegen jeder Lieferung bei.',
+      'w3t': 'Europäische Geschäftskultur', 
+      'w3p': 'Gründer persönlich in Deutschland vor Ort. Wir arbeiten nach europäischen Standards: präzise Spezifikationen, verlässliche Fristen und transparente Kommunikation.',
+      'w4t': 'Kostenfreie Musterkits', 
+      'w4p': 'Prüfen Sie das Material vorab. Wir stellen Ihnen kostenfreie Musterboxen für Labor- und Baustellentests zur Verfügung — völlig unverbindlich.',
+      'w5t': 'Reibungslose Exportlogistik', 
+      'w5p': 'Direkte Seefrachtabwicklung von Nhava Sheva & Mundra nach Hamburg, Rotterdam oder Antwerpen inklusive kompletter Zoll- und Ausfuhrdokumentation.',
+      'w6t': 'Offenes Sourcing-Portal', 
+      'w6p': 'Nicht auf Katalogware beschränkt. Nennen Sie uns die Produkte oder Werkstoffe, die Sie in Europa zu teuer einkaufen — wir beschaffen direkt vom Hersteller.',
       'a.kicker': '04 — Über uns',
-      'a.big': 'Vertrauen behauptet man nicht.<br>Es wird <em class="gold-i">in jede Sendung versiegelt</em> — Scheibe für Scheibe, Container für Container.',
-      'a.chip1': 'Zuverlässigkeit', 'a.chip2': 'Transparenz', 'a.chip3': 'Langfristige Partnerschaft',
-      'a.p1': 'Ram ji Traders ist ein globaler Sourcing- und Qualitätssicherungspartner mit Sitz in Indien. Aktuell arbeiten wir mit den etablierten Bitumen- und EPDM-Scheiben-Herstellern des Landes — Produzenten mit bewährter Marktstärke im Inland — und verbinden ihre Produkte mit Käufern weltweit. Weitere Produktkategorien ergänzen unseren Katalog, sobald wir zusätzliche Fertigungspartner qualifizieren.',
-      'a.p2': 'Unser Vorteil ist kulturell: Nach zwei Jahren Leben und Arbeiten in Deutschland arbeiten wir so, wie es europäische Einkäufer erwarten — klare Spezifikationen, verbindliche Angebote, pünktlicher Versand und vollständige, verlässliche Dokumentation. Derselbe Standard gilt für jede Produktlinie, die wir hinzufügen.',
-      'a.dt1': 'Produkte', 'a.dd1': 'Bitumen- & EPDM-Scheiben — bald mehr',
-      'a.dt2': 'Modell', 'a.dd2': 'Globales Sourcing & Export',
-      'a.dt3': 'Fokusmärkte', 'a.dd3': 'Europa & weltweit',
-      'a.dt4': 'Zertifizierung', 'a.dd4': 'ISO & BIS (Partnerwerke)',
-      'c.title': 'Versiegeln wir Ihr<br><em class="gold-i">nächstes Projekt.</em>',
-      'c.p': 'Fordern Sie ein Angebot oder ein Musterset an — wir antworten innerhalb von 24 Stunden.',
-      'c.btn': 'Kontakt',
-      'f.brand': 'Globaler Sourcing- und Qualitätssicherungspartner für Indiens Fertigungsbasis — aktuell spezialisiert auf Bitumen- und EPDM-Scheiben, mit weiteren Produktkategorien, die im Laufe der Zeit hinzukommen.',
-      'f.contact': 'Kontakt', 'f.explore': 'Entdecken', 'f.base': 'Indien · Export weltweit',
-      'f.rights': 'Alle Rechte vorbehalten.', 'f.madein': 'Bitumen- & EPDM-Scheiben heute · Made in India',
-      /* contact page */
-      'ph.kicker': 'Kontakt',
-      'ph.title': 'Sprechen wir über <em class="gold-i">Sourcing.</em>',
-      'ph.sub': 'Angebote, Muster, technische Spezifikationen oder ein gemeinsamer Sourcing-Plan — wir antworten innerhalb von 24 Stunden.',
-      'fm.name': 'Vollständiger Name *', 'fm.company': 'Firma', 'fm.country': 'Land',
-      'fm.email': 'Geschäftliche E-Mail *', 'fm.phone': 'Telefon / WhatsApp', 'fm.product': 'Produktinteresse *',
-      'fm.qty': 'Geschätzte Menge', 'fm.msg': 'Ihre Anforderungen *',
-      'fm.btn': 'Anfrage senden',
-      'fm.opt0': 'Produkt auswählen', 'fm.opt1': 'Bitumenscheiben', 'fm.opt2': 'EPDM-Scheiben',
-      'fm.opt3': 'Beides — Bitumen & EPDM', 'fm.opt4': 'Kundenspezifisch', 'fm.opt5': 'Etwas anderes / zukünftige Produktanfrage',
-      'fm.phcountry': 'z. B. Deutschland', 'fm.phqty': 'z. B. 50.000 Stk. / Monat',
-      'fm.phmsg': 'Maße, Materialien, Verpackung, Zielpreis, Lieferhafen — alles, was uns hilft, präzise anzubieten.',
-      'fm.note': 'Absenden sendet Ihre Anfrage direkt an unser Postfach <a href="mailto:export@ramjitraders.com">export@ramjitraders.com</a> — kein E-Mail-Programm oder Konto erforderlich.',
-      'fm.success': '✓ Vielen Dank — Ihre Anfrage wurde an unser Team gesendet. Wir antworten innerhalb von 24 Stunden. Lieber direkt per E-Mail? <a href="mailto:export@ramjitraders.com">export@ramjitraders.com</a>',
-      'fm.err': '⚠️ Senden fehlgeschlagen (Netzwerkproblem). Bitte schreiben Sie uns direkt an <a href="mailto:export@ramjitraders.com">export@ramjitraders.com</a> — wir antworten innerhalb von 24 Stunden.',
-      'as.direct': 'Direkter Kontakt', 'as.email': 'E-Mail',
-      'as.em1': 'Bestellungen & Angebote', 'as.em2': 'Allgemeine Anfragen',
+      'a.big': 'Direkter Zugang zu Indiens<br><em class="gold-i">stärksten Industriefertigungen.</em>',
+      'a.chip1': 'Zuverlässigkeit', 'a.chip2': 'Transparenz', 'a.chip3': 'Direkte Werkbeschaffung',
+      'a.p1': 'Ram ji Traders ist ein internationaler Beschaffungs- und Exportpartner, der Indiens führende Produktionskorridore direkt mit der europäischen Wirtschaft verbindet.',
+      'a.p2': 'Gegründet von Arya mit persönlicher Präsenz in Deutschland und tiefen Wurzeln in den indischen Industriezentren, schließen wir Zwischenhändler aus und bieten europäische Qualität zu Herstellerpreisen.',
+      'a.dt1': 'Kernbereiche', 'a.dd1': 'Dichtscheiben & Custom Sourcing',
+      'a.dt2': 'Modell', 'a.dd2': 'Global Sourcing & Export',
+      'a.dt3': 'Fokusmärkte', 'a.dd3': 'Europa & Weltweit',
+      'a.dt4': 'Incoterms', 'a.dd4': 'FOB Indien / CIF Europa',
+      'c.kicker': '05 — Nächster Schritt',
+      'c.title': 'Haben Sie einen konkreten Beschaffungsbedarf oder<br><em class="gold-i">wünschen Sie ein Vergleichsangebot?</em>',
+      'c.p': 'Senden Sie uns Zeichnungen, DIN/ISO-Normen oder Musteranforderungen. Wir antworten innerhalb von 24 Stunden.',
+      'c.btn': 'Sourcing-Anfrage einreichen',
+      'c.call': 'Direktkontakt (Deutschland)',
+      'f.brand': 'Globaler Beschaffungspartner und Merchant Exporter, der zertifizierte indische Industriehersteller mit europäischen Unternehmen verbindet. Spezialisiert auf Dichtscheiben, individuelle Metallstanzteile und maßgeschneiderte Bauteilbeschaffung.',
+      'f.contact': 'Kontakt',
+      'f.explore': 'Navigation',
+      'f.rights': 'Alle Rechte vorbehalten.',
+      'f.madein': 'Global Sourcing Partner · Made in India',
+      'f.base': 'Indien · Export Weltweit',
+      'cpg.kicker': 'Global Sourcing Portal · Indien → Europa',
+      'cpg.title': 'Nennen Sie uns Ihren Beschaffungsbedarf.<br><em class="gold-i">Wir schließen Ihre Lieferlücken.</em>',
+      'cpg.sub': 'Ob Dichtscheiben oder individuelle Industriekomponenten zur Senkung Ihrer Beschaffungskosten um 25–40 % — fordern Sie ein Benchmark-Angebot oder kostenfreie Muster an. Antwort innerhalb von 24 Stunden.',
+      'fm.name': 'Ihr Name *', 'fm.company': 'Firmenname *',
+      'fm.country': 'Land', 'fm.phcountry': 'z. B. Deutschland',
+      'fm.email': 'Geschäftliche E-Mail *', 'fm.phone': 'Telefon / WhatsApp',
+      'fm.product': 'Produkt / Beschaffungsbereich *',
+      'fm.opt0': 'Bereich auswählen',
+      'opt.bitumen': 'Bitumen-Dichtscheiben (M5–M20)',
+      'opt.epdm': 'EPDM-Verbundscheiben',
+      'opt.stampings': 'Metallstanzteile & Verbindungstechnik',
+      'opt.other': 'Individuelle Beschaffung / Sonstige Anfrage',
+      'fm.qty': 'Geschätzte Menge / Volumen',
+      'fm.msg': 'Technische Daten, Normen & Anfrage *',
+      'ph.name': 'z. B. Thomas Müller', 'ph.company': 'z. B. Müller Bau GmbH',
+      'ph.email': 'z. B. t.mueller@unternehmen.de',
+      'ph.qty': 'z. B. 50.000 Stück / 2.000 Meter / 1 FCL',
+      'ph.msg': 'Nennen Sie uns Abmessungen, DIN/ISO-Normen, Werkstoff oder Zielhafen in Europa...',
+      'fm.btn': 'Beschaffungsanfrage senden →',
+      'fm.note': 'Ihre Anfrage wird direkt an unser Exportbüro gesendet <a href="mailto:export@ramjitraders.com">export@ramjitraders.com</a> — kein E-Mail-Programm erforderlich.',
+      'fm.success': '✓ Vielen Dank — Ihre Anfrage ist eingegangen. Wir prüfen Ihre Angaben und melden uns innerhalb von 24 Stunden. Direktkontakt: <a href="mailto:export@ramjitraders.com">export@ramjitraders.com</a>',
+      'fm.err': '⚠️ Übertragungsfehler. Bitte schreiben Sie uns direkt an <a href="mailto:export@ramjitraders.com">export@ramjitraders.com</a> — wir antworten innerhalb von 24 Stunden.',
+      'as.direct': 'Direkter Kontakt',
+      'as.em1': 'Bestellungen & Sourcing-Anfragen', 'as.em2': 'Allgemeine Anfragen',
       'as.in': 'Indien · Telefon / WhatsApp', 'as.de': 'Deutschland · Telefon / WhatsApp',
-      'as.resp': 'Antwortzeit', 'as.respv': 'Innerhalb von 24 Stunden',
-      'as.markets': 'Märkte', 'as.marketsv': 'Europa · weltweit',
-      'st.h': 'Wie geht es weiter',
-      'st1': '<b>Formular senden.</b> Nennen Sie uns Maße, Mengen und Ziel.',
-      'st2': '<b>Spezifikationen + Preise erhalten.</b> Vollständiges Angebot innerhalb von 24 Stunden.',
-      'st3': '<b>Muster freigeben.</b> Qualität prüfen, dann liefern wir.',
-      'cert.tag': 'ISO- & BIS-zertifizierte Partner · Indische Herstellung · 2 Jahre in Deutschland'
+      'as.resp': 'Reaktionszeit', 'as.respv': 'Innerhalb von 24 Stunden',
+      'as.markets': 'Lieferung', 'as.marketsv': 'FOB Indien / CIF Europa',
+      'st.h': 'Der Ablauf',
+      'st1': '<b>Anfrage senden.</b> Nennen Sie uns Maße, Zeichnung oder Menge.',
+      'st2': '<b>Angebot erhalten.</b> Vollständiges Benchmark-Angebot in 24 Std.',
+      'st3': '<b>Muster freigeben.</b> Kostenfreie Muster testen, dann liefern wir.',
+      'cert.tag': 'ISO & BIS-zertifizierte Partner · Sourced in India · 2 Jahre in Deutschland'
     }
   };
 
+  /* ────────────────────── PAGE TITLES ────────────────────── */
   var TITLES = {
-    en: {
-      home: 'Ram ji Traders — Global Sourcing Partner for Industrial Components | India → Europe',
-      contact: 'Contact — Ram ji Traders | Request a Quote'
+    index: {
+      en: 'Ram ji Traders — Global Sourcing Partner & Exporter | India → Europe',
+      de: 'Ram ji Traders — Globaler Beschaffungspartner & Exporteur | Indien → Europa'
     },
-    de: {
-      home: 'Ram ji Traders — Globaler Sourcing-Partner für Industriekomponenten | Indien → Europa',
-      contact: 'Kontakt — Ram ji Traders | Angebot anfordern'
+    contact: {
+      en: 'Contact & Sourcing Portal — Ram ji Traders | Request Sourcing & Quote',
+      de: 'Kontakt & Sourcing-Portal — Ram ji Traders | Beschaffungsanfrage'
     }
   };
 
-  function apply(lang) {
-    if (!D[lang]) lang = 'en';
-    var dict = D[lang];
-    document.querySelectorAll('[data-i18n]').forEach(function (el) {
-      var k = el.getAttribute('data-i18n');
-      if (dict[k] !== undefined) el.textContent = dict[k];
-    });
-    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
-      var k = el.getAttribute('data-i18n-html');
-      if (dict[k] !== undefined) el.innerHTML = dict[k];
-    });
-    document.querySelectorAll('[data-i18n-ph]').forEach(function (el) {
-      var k = el.getAttribute('data-i18n-ph');
-      if (dict[k] !== undefined) el.setAttribute('placeholder', dict[k]);
-    });
-    document.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
-      var k = el.getAttribute('data-i18n-alt');
-      if (dict[k] !== undefined) el.setAttribute('alt', dict[k]);
-    });
-    document.querySelectorAll('.lang-btn').forEach(function (b) {
-      b.classList.toggle('on', b.getAttribute('data-lang') === lang);
-    });
-    document.documentElement.lang = lang;
-    var page = /contact/i.test(location.pathname) ? 'contact' : 'home';
-    document.title = TITLES[lang][page];
-    try { localStorage.setItem('rjt-lang', lang); } catch (e) {}
-    window.dispatchEvent(new CustomEvent('langchange', { detail: lang }));
+  function getPageKey() {
+    var p = window.location.pathname.toLowerCase();
+    if (p.indexOf('contact') !== -1) return 'contact';
+    return 'index';
   }
 
-  document.querySelectorAll('.lang-btn').forEach(function (b) {
-    b.addEventListener('click', function () { apply(b.getAttribute('data-lang')); });
+  function setLanguage(lang) {
+    if (!D[lang]) lang = 'en';
+    document.documentElement.lang = lang;
+    try { localStorage.setItem('rjt_lang', lang); } catch (e) {}
+
+    var dict = D[lang];
+
+    var els = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < els.length; i++) {
+      var key = els[i].getAttribute('data-i18n');
+      if (dict[key] !== undefined) {
+        els[i].textContent = dict[key];
+      }
+    }
+
+    var htmlEls = document.querySelectorAll('[data-i18n-html]');
+    for (var j = 0; j < htmlEls.length; j++) {
+      var hKey = htmlEls[j].getAttribute('data-i18n-html');
+      if (dict[hKey] !== undefined) {
+        htmlEls[j].innerHTML = dict[hKey];
+      }
+    }
+
+    var phEls = document.querySelectorAll('[data-i18n-ph]');
+    for (var k = 0; k < phEls.length; k++) {
+      var pKey = phEls[k].getAttribute('data-i18n-ph');
+      if (dict[pKey] !== undefined) {
+        phEls[k].setAttribute('placeholder', dict[pKey]);
+      }
+    }
+
+    var pageKey = getPageKey();
+    if (TITLES[pageKey] && TITLES[pageKey][lang]) {
+      document.title = TITLES[pageKey][lang];
+    }
+
+    var btns = document.querySelectorAll('.lang-btn');
+    for (var b = 0; b < btns.length; b++) {
+      var bLang = btns[b].getAttribute('data-lang');
+      if (bLang === lang) {
+        btns[b].classList.add('on');
+      } else {
+        btns[b].classList.remove('on');
+      }
+    }
+
+    try {
+      window.dispatchEvent(new CustomEvent('langchange', { detail: { lang: lang } }));
+    } catch (e) {}
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var saved = 'en';
+    try { saved = localStorage.getItem('rjt_lang') || 'en'; } catch (e) {}
+    setLanguage(saved);
+
+    document.addEventListener('click', function (e) {
+      var target = e.target;
+      if (target && target.classList && target.classList.contains('lang-btn')) {
+        var lang = target.getAttribute('data-lang');
+        if (lang) setLanguage(lang);
+      }
+    });
   });
 
-  var saved = 'en';
-  try { saved = localStorage.getItem('rjt-lang') || 'en'; } catch (e) {}
-  apply(saved);
+  window.RJT_I18N = { setLanguage: setLanguage };
 })();
