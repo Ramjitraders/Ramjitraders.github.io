@@ -167,4 +167,24 @@
       });
     });
   }
+
+  /* ── Dynamic bulletproof email injector (prevents scraper/obfuscation corruption) ── */
+  function injectEmails() {
+    document.querySelectorAll('[data-email-user]').forEach(function (el) {
+      var u = el.getAttribute('data-email-user');
+      var d = el.getAttribute('data-email-domain') || 'ramjitraders.com';
+      var tag = el.getAttribute('data-email-tag');
+      var email = u + '@' + d;
+      el.setAttribute('href', 'mailto:' + email);
+      if (el.classList.contains('email-auto-text') || !el.textContent.trim()) {
+        el.innerHTML = email + (tag ? ' <i class="f-tag">' + tag + '</i>' : '');
+      }
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectEmails);
+  } else {
+    injectEmails();
+  }
+
 })();
