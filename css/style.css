@@ -318,3 +318,205 @@ h1{font-size:clamp(2.7rem,6.6vw,5.5rem);margin-top:26px}
   .brochure-strip p{max-width:none}
   .brochure-strip .btn{width:100%}
 }
+
+/* ── Institutional Trust & Accreditation Strip ── */
+.trust-section {
+  padding: 70px 0 60px;
+  position: relative;
+  background: radial-gradient(circle at 50% 0%, rgba(212, 169, 78, 0.08), transparent 70%), #070c18;
+  border-top: 1px solid rgba(212, 169, 78, 0.2);
+  border-bottom: 1px solid rgba(212, 169, 78, 0.15);
+}
+.trust-head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+.trust-card {
+  background: linear-gradient(180deg, rgba(16, 24, 40, 0.85), rgba(11, 17, 32, 0.98));
+  border: 1px solid rgba(212, 169, 78, 0.25);
+  border-radius: 14px;
+  padding: 22px 18px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+.trust-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, transparent, #d4a94e, transparent);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.trust-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212, 169, 78, 0.65);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(212, 169, 78, 0.15);
+}
+.trust-card:hover::before {
+  opacity: 1;
+}
+.trust-badge-tag {
+  display: inline-block;
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  color: var(--gold2);
+  margin-bottom: 10px;
+}
+.trust-card-h {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trust-card-h svg {
+  width: 13px;
+  height: 13px;
+  stroke: var(--gold2);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+.trust-card:hover .trust-card-h svg {
+  transform: translate(2px, -2px);
+}
+.trust-card-p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(236, 231, 218, 0.7);
+  margin: 0;
+}
+.f-accred-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.f-accred-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13.5px;
+  color: rgba(236, 231, 218, 0.75);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.f-accred-links a:hover {
+  color: var(--gold2);
+}
+
+@media(max-width: 1100px) {
+  .trust-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media(max-width: 768px) {
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media(max-width: 520px) {
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Golden Moving Accreditation Marquee Strip ── */
+.accred-ticker {
+  background: linear-gradient(90deg, #050811, #0a1020, #050811);
+  border-top: 1px solid rgba(212, 169, 78, 0.35);
+  border-bottom: 1px solid rgba(212, 169, 78, 0.35);
+  padding: 14px 0;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6), 0 0 25px rgba(212, 169, 78, 0.08);
+}
+.accred-ticker::before, .accred-ticker::after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+.accred-ticker::before {
+  left: 0;
+  background: linear-gradient(90deg, #050811, transparent);
+}
+.accred-ticker::after {
+  right: 0;
+  background: linear-gradient(270deg, #050811, transparent);
+}
+.accred-track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  animation: accred-marquee 32s linear infinite;
+}
+.accred-ticker:hover .accred-track {
+  animation-play-state: paused;
+}
+.accred-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 18px;
+  margin: 0 8px;
+  border-radius: 999px;
+  background: rgba(212, 169, 78, 0.07);
+  border: 1px solid rgba(212, 169, 78, 0.22);
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+.accred-item:hover {
+  background: rgba(212, 169, 78, 0.18);
+  border-color: rgba(212, 169, 78, 0.6);
+  box-shadow: 0 0 16px rgba(212, 169, 78, 0.25);
+  transform: scale(1.03);
+}
+.accred-tag {
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold2);
+  background: rgba(212, 169, 78, 0.15);
+  padding: 3px 7px;
+  border-radius: 6px;
+}
+.accred-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+}
+.accred-sub {
+  font-size: 11.5px;
+  color: rgba(236, 231, 218, 0.65);
+}
+.accred-sep {
+  color: var(--gold);
+  font-size: 10px;
+  margin: 0 4px;
+  opacity: 0.6;
+}
+
+@keyframes accred-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .accred-track { animation: none; }
+}
