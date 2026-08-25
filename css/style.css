@@ -67,7 +67,7 @@ h2{font-size:clamp(2.2rem,4.6vw,3.6rem);margin:22px 0 0}
 
 /* ── Nav ─────────────────────────────────── */
 .site-nav{position:fixed;inset:0 0 auto 0;z-index:100;padding:24px 0;transition:padding .4s,background .4s,border-color .4s;border-bottom:1px solid transparent}
-.site-nav.scrolled{padding:12px 0;background:rgba(7,11,21,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom-color:rgba(212,169,78,.12)}
+.site-nav.scrolled{padding:12px 0;background:rgba(7,11,21,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom-color:rgba(212,169,78,.12)}
 .nav-inner{display:flex;align-items:center;gap:36px}
 .brand{display:flex;align-items:center;gap:13px}
 /* brand emblem — transparent, no block, sized to be clearly readable */
@@ -519,4 +519,23 @@ h1{font-size:clamp(2.7rem,6.6vw,5.5rem);margin-top:26px}
 }
 @media (prefers-reduced-motion: reduce) {
   .accred-track { animation: none; }
+}
+
+/* ── Graceful Copper Product Fallback ── */
+.p-media.p-fallback {
+  background: radial-gradient(circle at 50% 50%, rgba(212, 169, 78, 0.22), rgba(8, 14, 28, 0.98)) !important;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(212, 169, 78, 0.3);
+}
+.p-media.p-fallback img { display: none; }
+.p-media.p-fallback::after {
+  content: "DIN EN 1057 · SEAMLESS COPPER PIPES";
+  font-family: var(--font-d);
+  font-size: 16px;
+  letter-spacing: 0.18em;
+  color: var(--gold2);
+  text-shadow: 0 0 15px rgba(212, 169, 78, 0.4);
 }
