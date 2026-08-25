@@ -112,7 +112,7 @@
     // pre-select product from ?product=bitumen|epdm|both
     var qp = new URLSearchParams(window.location.search).get('product');
     if (qp) {
-      var map = { bitumen: 'Bitumen Washers', epdm: 'EPDM Washers', both: 'Both — Bitumen & EPDM' };
+      var map = { copper: 'Seamless Copper Pipes', bitumen: 'Bitumen Washers', epdm: 'EPDM Washers', both: 'Both — Bitumen & EPDM' };
       var sel = document.getElementById('product');
       if (map[qp] && sel) sel.value = map[qp];
     }

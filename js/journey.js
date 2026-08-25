@@ -102,21 +102,29 @@
   })();
 
   /* ── canvas sizing ───────────────────────────────────── */
-  var W = 0, H = 0, DPR = Math.min(window.devicePixelRatio || 1, 2), S = 1, VW = 1600;
+  var W = 0, H = 0, DPR = Math.min(window.devicePixelRatio || 1, (window.innerWidth < 768 ? 1 : 1.5)), S = 1, VW = 1600;
   var stars = [];
+  var vignette = null;
   function resize() {
     W = canvas.clientWidth; H = canvas.clientHeight;
     canvas.width = W * DPR; canvas.height = H * DPR;
     S = H / REF_H; VW = W / S;
     stars = [];
-    for (var i = 0; i < 70; i++) stars.push({ x: Math.random(), y: Math.random() * 0.55, r: Math.random() * 1.5 + 0.4, p: Math.random() * 7 });
+    vignette = null;
+    for (var i = 0; i < 48; i++) stars.push({ x: Math.random(), y: Math.random() * 0.55, r: Math.random() * 1.5 + 0.4, p: Math.random() * 7 });
     needsDraw = true;
   }
   window.addEventListener('resize', resize);
   resize();
 
   /* ── progress tracking ───────────────────────────────── */
-  var progress = 0, targetP = 0, needsDraw = true;
+  var progress = 0, targetP = 0, needsDraw = true, journeyOn = true;
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (entries) {
+      journeyOn = entries[0].isIntersecting;
+      if (journeyOn) needsDraw = true;
+    }, { rootMargin: '60px' }).observe(track);
+  }
   function measure() {
     var r = track.getBoundingClientRect();
     var total = r.height - window.innerHeight;
@@ -583,11 +591,13 @@
 
     ctx.restore();
 
-    /* vignette */
-    var vg = ctx.createRadialGradient(W / 2, H * 0.46, Math.min(W, H) * 0.3, W / 2, H * 0.5, Math.max(W, H) * 0.78);
-    vg.addColorStop(0, 'rgba(4,6,12,0)');
-    vg.addColorStop(1, 'rgba(4,6,12,.52)');
-    ctx.fillStyle = vg;
+    /* vignette (cached per resize - perf) */
+    if (!vignette) {
+      vignette = ctx.createRadialGradient(W / 2, H * 0.46, Math.min(W, H) * 0.3, W / 2, H * 0.5, Math.max(W, H) * 0.78);
+      vignette.addColorStop(0, 'rgba(4,6,12,0)');
+      vignette.addColorStop(1, 'rgba(4,6,12,.52)');
+    }
+    ctx.fillStyle = vignette;
     ctx.fillRect(0, 0, W, H);
   }
 
@@ -690,7 +700,7 @@
   /* ── main loop ───────────────────────────────────────── */
   function frame() {
     var d = targetP - progress;
-    if (Math.abs(d) > 0.0004) { progress += d * 0.14; needsDraw = true; }
+    if (Math.abs(d) > 0.0007) { progress += d * 0.2; needsDraw = true; }
     if (needsDraw) { render(progress); updateUI(progress); needsDraw = false; }
     requestAnimationFrame(frame);
   }
